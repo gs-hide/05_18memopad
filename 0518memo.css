@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 32px;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+main {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+footer {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+p {
+  font-size: 200%;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  height: 100px;
+}
+
+ul {
+  padding: 0;
+  border-top: 1px solid #000000;
+  display: table;
+  /* 定義 */
+  table-layout: fixed;
+  width: 100%;
+}
+
+li {
+  text-align: center;
+  list-style-type: none;
+  border: 1px solid #666;
+  background-color: #FFF;
+  display: table-cell;
+  /* 定義 */
+  cursor: pointer;
+}
+
+li:hover {
+  background: #0066CC;
+  color: #fff;
+}
+
+input,
+textarea {
+
+  width: 95%;
+  font-size: 60%;
+  box-shadow: 3px 3px 3px 3px #555;
+}
+
+input {
+  height: 30px;
+  text-align: center;
+}
+
+textarea {
+  height: 150px;
+}
+
+.box-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  width: 95%;
+  height: 30px;
+  font-size: 60%;
+  box-shadow: 3px 3px 3px 3px #555;
+}
+
+.box-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* div {
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid #666;
+  margin: 10px;
+}
+
+div p {
+  font-size: 1.5rem;
+  height: auto;
+} */

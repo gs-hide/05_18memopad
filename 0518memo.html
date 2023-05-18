@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0518memo</title>
+  <link rel="stylesheet" href="0518memo.css">
+</head>
+
+<body>
+  <header>
+    <h1>６月限定メモ！！</h1>
+  </header>
+
+  <main>
+    <input type="text" id="input">
+    <div class="box-list">
+      <div class="box-text">
+        <p>２９日　月</p>
+        <textarea id="text_area1"></textarea>
+      </div>
+      <div class="box-text">
+        <p>３０日　火</p>
+        <textarea id="text_area2"></textarea>
+      </div>
+      <div class="box-text">
+        <p>３１日　水</p>
+        <textarea id="text_area3"></textarea>
+      </div>
+      <div class="box-text">
+        <p>１日　木</p>
+        <textarea id="text_area4"></textarea>
+      </div>
+      <div class="box-text">
+        <p>２日　金</p>
+        <textarea id="text_area5"></textarea>
+      </div>
+      <div class="box-text">
+        <p>３日　土</p>
+        <textarea id="text_area6"></textarea>
+      </div>
+      <div class="box-text">
+        <p>４日　日</p>
+        <textarea id="text_area7"></textarea>
+      </div>
+    </div>
+    <div class="box-list">
+      <div class="box-text">
+        <p>５日　月</p>
+        <textarea id="text_area8"></textarea>
+      </div>
+      <div class="box-text">
+        <p>６日　火</p>
+        <textarea id="text_area9"></textarea>
+      </div>
+      <div class="box-text">
+        <p>７日　水</p>
+        <textarea id="text_area10"></textarea>
+      </div>
+      <div class="box-text">
+        <p>８日　木</p>
+        <textarea id="text_area11"></textarea>
+      </div>
+      <div class="box-text">
+        <p>９日　金</p>
+        <textarea id="text_area12"></textarea>
+      </div>
+      <div class="box-text">
+        <p>１０日　土</p>
+        <textarea id="text_area13"></textarea>
+      </div>
+      <div class="box-text">
+        <p>１１日　日</p>
+        <textarea id="text_area14"></textarea>
+      </div>
+    </div>
+    <div class="box-list">
+      <div class="box-text">
+        <p>１２日　月</p>
+        <textarea id="text_area15"></textarea>
+      </div>
+      <div class="box-text">
+        <p>１６日　火</p>
+        <textarea id="text_area16"></textarea>
+      </div>
+      <div class="box-text">
+        <p>１３日　水</p>
+        <textarea id="text_area17"></textarea>
+      </div>
+      <div class="box-text">
+        <p>１４日　木</p>
+        <textarea id="text_area18"></textarea>
+      </div>
+      <div class="box-text">
+        <p>１５日　金</p>
+        <textarea id="text_area19"></textarea>
+      </div>
+      <div class="box-text">
+        <p>１６日　土</p>
+        <textarea id="text_area20"></textarea>
+      </div>
+      <div class="box-text">
+        <p>１７日　日</p>
+        <textarea id="text_area21"></textarea>
+      </div>
+    </div>
+    <div class="box-list">
+      <div class="box-text">
+        <p>１８日　月</p>
+        <textarea id="text_area22"></textarea>
+      </div>
+      <div class="box-text">
+        <p>１９日　火</p>
+        <textarea id="text_area23"></textarea>
+      </div>
+      <div class="box-text">
+        <p>２０日　水</p>
+        <textarea id="text_area24"></textarea>
+      </div>
+      <div class="box-text">
+        <p>２１日　木</p>
+        <textarea id="text_area25"></textarea>
+      </div>
+      <div class="box-text">
+        <p>２２日　金</p>
+        <textarea id="text_area26"></textarea>
+      </div>
+      <div class="box-text">
+        <p>２３日　土</p>
+        <textarea id="text_area27"></textarea>
+      </div>
+      <div class="box-text">
+        <p>２４日　日</p>
+        <textarea id="text_area28"></textarea>
+      </div>
+    </div>
+    <div class="box-list">
+      <div class="box-text">
+        <p>２５日　月</p>
+        <textarea id="text_area29"></textarea>
+      </div>
+      <div class="box-text">
+        <p>２６日　火</p>
+        <textarea id="text_area30"></textarea>
+      </div>
+      <div class="box-text">
+        <p>２７日　水</p>
+        <textarea id="text_area31"></textarea>
+      </div>
+      <div class="box-text">
+        <p>２８日　木</p>
+        <textarea id="text_area32"></textarea>
+      </div>
+      <div class="box-text">
+        <p>２９日　金</p>
+        <textarea id="text_area33"></textarea>
+      </div>
+      <div class="box-text">
+        <p>３０日　土</p>
+        <textarea id="text_area34"></textarea>
+      </div>
+      <div class="box-text">
+        <p>１日　日</p>
+        <textarea id="text_area35"></textarea>
+      </div>
+    </div>
+
+    <ul>
+      <li id="save">Save</li>
+      <li id="clear">Clear</li>
+    </ul>
+  </main>
+
+  <footer>
+    <small>G's</small>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+    $('#save').on('click', function () {
+      const input = $('#input').val();
+      const text1 = $('#text_area1').val();
+      const text2 = $('#text_area2').val();
+      const text_area3 = $('#text_area3').val();
+      const text_area4 = $('#text_area4').val();
+      const text_area5 = $('#text_area5').val();
+      const text_area6 = $('#text_area6').val();
+      const text_area7 = $('#text_area7').val();
+      const text_area8 = $('#text_area8').val();
+      const text_area9 = $('#text_area9').val();
+      const text_area10 = $('#text_area10').val();
+      const text_area11 = $('#text_area11').val();
+      const text_area12 = $('#text_area12').val();
+      const text_area13 = $('#text_area13').val();
+      const text_area14 = $('#text_area14').val();
+      const text_area15 = $('#text_area15').val();
+      const text_area16 = $('#text_area16').val();
+      const text_area17 = $('#text_area17').val();
+      const text_area18 = $('#text_area18').val();
+      const text_area19 = $('#text_area19').val();
+      const text_area20 = $('#text_area20').val();
+      const text_area21 = $('#text_area21').val();
+      const text_area22 = $('#text_area22').val();
+      const text_area23 = $('#text_area23').val();
+      const text_area24 = $('#text_area24').val();
+      const text_area25 = $('#text_area25').val();
+      const text_area26 = $('#text_area26').val();
+      const text_area27 = $('#text_area27').val();
+      const text_area28 = $('#text_area28').val();
+      const text_area29 = $('#text_area29').val();
+      const text_area30 = $('#text_area30').val();
+      const text_area31 = $('#text_area31').val();
+      const text_area32 = $('#text_area32').val();
+      const text_area33 = $('#text_area33').val();
+      const text_area34 = $('#text_area34').val();
+      const text_area35 = $('#text_area35').val();
+      const data = {
+        title: input,
+        text1: text1,
+        text2: text2,
+        text3: text_area3,
+        text4: text_area4,
+        text5: text_area5,
+        text6: text_area6,
+        text7: text_area7,
+        text8: text_area8,
+        text9: text_area9,
+        text10: text_area10,
+        text11: text_area11,
+        text12: text_area12,
+        text13: text_area13,
+        text14: text_area14,
+        text15: text_area15,
+        text16: text_area16,
+        text17: text_area17,
+        text18: text_area18,
+        text19: text_area19,
+        text20: text_area20,
+        text21: text_area21,
+        text22: text_area22,
+        text23: text_area23,
+        text24: text_area24,
+        text25: text_area25,
+        text26: text_area26,
+        text27: text_area27,
+        text28: text_area28,
+        text29: text_area29,
+        text30: text_area30,
+        text31: text_area31,
+        text32: text_area32,
+        text33: text_area33,
+        text34: text_area34,
+        text35: text_area35,
+      };
+      console.log(data);
+      const json = JSON.stringify(data);
+      console.log(json);
+      localStorage.setItem('memo', json);
+    });
+
+    $('#clear').on('click', function () {
+      localStorage.removeItem('memo');
+      $('#input').val('')
+      $('#text_area1').val('');
+      $('#text_area2').val('');
+      $('#text_area3').val('');
+      $('#text_area4').val('');
+      $('#text_area5').val('');
+      $('#text_area6').val('');
+      $('#text_area7').val('');
+      $('#text_area8').val('');
+      $('#text_area9').val('');
+      $('#text_area10').val('');
+      $('#text_area11').val('');
+      $('#text_area12').val('');
+      $('#text_area13').val('');
+      $('#text_area14').val('');
+      $('#text_area15').val('');
+      $('#text_area16').val('');
+      $('#text_area17').val('');
+      $('#text_area18').val('');
+      $('#text_area19').val('');
+      $('#text_area20').val('');
+      $('#text_area21').val('');
+      $('#text_area22').val('');
+      $('#text_area23').val('');
+      $('#text_area24').val('');
+      $('#text_area25').val('');
+      $('#text_area26').val('');
+      $('#text_area27').val('');
+      $('#text_area28').val('');
+      $('#text_area29').val('');
+      $('#text_area30').val('');
+      $('#text_area31').val('');
+      $('#text_area32').val('');
+      $('#text_area33').val('');
+      $('#text_area34').val('');
+      $('#text_area35').val('');
+
+    });
+
+    if (localStorage.getItem('memo')) {
+      const json = localStorage.getItem('memo');
+      console.log(json);
+      const data = JSON.parse(json);
+      console.log(data);
+
+      $('#input').val(data.title);
+      $('#text_area1').val(data.text1);
+      $('#text_area2').val(data.text2);
+      $('#text_area3').val(data.text3);
+      $('#text_area4').val(data.text4);
+      $('#text_area5').val(data.text5);
+      $('#text_area6').val(data.text6);
+      $('#text_area7').val(data.text7);
+      $('#text_area8').val(data.text8);
+      $('#text_area9').val(data.text9);
+      $('#text_area10').val(data.text10);
+      $('#text_area11').val(data.text11);
+      $('#text_area12').val(data.text12);
+      $('#text_area13').val(data.text13);
+      $('#text_area14').val(data.text14);
+      $('#text_area15').val(data.text15);
+      $('#text_area16').val(data.text16);
+      $('#text_area17').val(data.text17);
+      $('#text_area18').val(data.text18);
+      $('#text_area19').val(data.text19);
+      $('#text_area20').val(data.text20);
+      $('#text_area21').val(data.text21);
+      $('#text_area22').val(data.text22);
+      $('#text_area23').val(data.text23);
+      $('#text_area24').val(data.text24);
+      $('#text_area25').val(data.text25);
+      $('#text_area26').val(data.text26);
+      $('#text_area27').val(data.text27);
+      $('#text_area28').val(data.text28);
+      $('#text_area29').val(data.text29);
+      $('#text_area30').val(data.text30);
+      $('#text_area31').val(data.text31);
+      $('#text_area32').val(data.text32);
+      $('#text_area33').val(data.text33);
+      $('#text_area34').val(data.text34);
+      $('#text_area35').val(data.text35);
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>

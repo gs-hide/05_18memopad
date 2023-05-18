@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おみくじ</title>
+  <link rel="stylesheet" href="./css/sample.css">
+</head>
+
+<body>
+  <header>
+    <h1>おみくじ</h1>
+  </header>
+
+  <main>
+    <ul>
+      <li id="pull">おみくじを引く</li>
+    </ul>
+    <p id="echo">結果は？</p>
+    <div id="history">
+      <p>履歴が表示されます</p>
+    </div>
+  </main>
+
+  <footer>フッター</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+    //履歴の配列を用意しておく
+    const history = [];
+
+    $('#pull').on('click', function () {
+      const omikuji = ['大吉', '中吉', '小吉', '凶', '大凶'];
+      const random = Math.floor(Math.random() * omikuji.length);
+      const result = omikuji[random];
+      $('#echo').text(result);
+      //配列に結果を追加する
+      history.unshift(result);
+      console.log(history);
+      //タグに入れた結果を保存するための配列
+      const historyElements = [];
+      //履歴の配列から順番に取り出してタグの配列に追加する（※複数パターンあり）
+      for (let i = 0; i < history.length; i++) {
+        historyElements.push('<p>' + history[i] + '</p>');
+      }
+      console.log(historyElements);
+      //タグの配列を画面に表示する
+      $('#history').html(historyElements);
+    });
+
+  </script>
+
+</body>
+
+</html>
